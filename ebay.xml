@@ -1,0 +1,17 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>eBay</ShortName>
+  <Description>Search eBay</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>http://anywhere.ebay.com/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">http://anywhere.ebay.com/favicon.ico</Image>
+  <Url method="GET" template="http://autosug.ebay.com/autosug" type="application/x-suggestions+json">
+    <Param name="sId" value="0"/>
+    <Param name="kwd" value="{searchTerms}"/>
+    <Param name="fmt" value="osr"/>
+  </Url>
+  <Url method="GET" template="http://rover.ebay.com/rover/1/711-104533-33622-0/4" type="text/html">
+    <Param name="mpre" value="http://www.ebay.com/sch/?_nkw={searchTerms}"/>
+  </Url>
+  <SearchForm>http://search.ebay.com/</SearchForm>
+</SearchPlugin>

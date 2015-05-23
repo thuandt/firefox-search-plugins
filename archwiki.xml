@@ -1,0 +1,18 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>ArchWiki</ShortName>
+  <Description>ArchLinux Wiki</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>https://wiki.archlinux.org/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">https://wiki.archlinux.org/favicon.ico</Image>
+  <Url method="GET" resultDomain="wiki.archlinux.org" template="https://wiki.archlinux.org/index.php" type="text/html">
+    <Param name="title" value="Special:Search"/>
+    <Param name="search" value="{searchTerms}"/>
+  </Url>
+  <Url method="GET" resultDomain="wiki.archlinux.org" template="https://wiki.archlinux.org/api.php" type="application/x-suggestions+json">
+    <Param name="action" value="opensearch"/>
+    <Param name="search" value="{searchTerms}"/>
+    <Param name="namespace" value="0"/>
+  </Url>
+  <SearchForm>https://wiki.archlinux.org/index.php/Special:Search</SearchForm>
+</SearchPlugin>

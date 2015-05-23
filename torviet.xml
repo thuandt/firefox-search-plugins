@@ -1,0 +1,16 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>TorViet</ShortName>
+  <Description>Search Torrents at TorViet.Com</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>http://torviet.com/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">http://torviet.com/favicon.ico</Image>
+  <Url method="GET" rel="results" resultDomain="torviet.com" template="http://torviet.com/torrents.php" type="text/html">
+    <Param name="search" value="{searchTerms}"/>
+    <Param name="page" value="{startPage?}"/>
+  </Url>
+  <Url method="GET" rel="suggestions" resultDomain="torviet.com" template="http://torviet.com/searchsuggest.php" type="application/x-suggestions+json">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+  <SearchForm>http://torviet.com/torrents.php</SearchForm>
+</SearchPlugin>

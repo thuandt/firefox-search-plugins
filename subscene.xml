@@ -1,0 +1,10 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Subscene</ShortName>
+  <Description>Subscene Subtitle Search</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>http://subscene.com/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">http://subscene.com/favicon.ico</Image>
+  <Url method="GET" template="http://subscene.com/subtitles/title?q={searchTerms}" type="text/html"/>
+  <SearchForm>http://subscene.com/</SearchForm>
+</SearchPlugin>

@@ -1,0 +1,16 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>GitHub</ShortName>
+  <Description>Search GitHub</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>https://github.com/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">https://github.com/favicon.ico</Image>
+  <Url method="GET" template="https://encrypted.google.com/complete/search" type="application/x-suggestions+json">
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="client" value="firefox"/>
+  </Url>
+  <Url method="GET" template="https://github.com/search" type="text/html">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+  <SearchForm>https://github.com/search</SearchForm>
+</SearchPlugin>

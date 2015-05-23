@@ -1,0 +1,13 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>IMDb</ShortName>
+  <Description>IMDb - The Internet Movie Database</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>http://www.imdb.com/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">http://www.imdb.com/favicon.ico</Image>
+  <Url method="GET" template="http://www.imdb.com/find" type="text/html">
+    <Param name="s" value="all"/>
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+  <SearchForm>http://www.imdb.com/</SearchForm>
+</SearchPlugin>

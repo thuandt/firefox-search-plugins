@@ -1,0 +1,10 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Google Play Store</ShortName>
+  <Description>Search for Android Apps</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>https://ssl.gstatic.com/android/market_images/web/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">https://ssl.gstatic.com/android/market_images/web/favicon.ico</Image>
+  <Url method="GET" template="https://play.google.com/store/search?q={searchTerms}" type="text/html"/>
+  <SearchForm>https://play.google.com/store</SearchForm>
+</SearchPlugin>

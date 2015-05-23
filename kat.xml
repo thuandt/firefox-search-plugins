@@ -1,0 +1,19 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>KAT</ShortName>
+  <Description>KickassTorrents</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>https://kastatic.com/images/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">https://kastatic.com/images/favicon.ico</Image>
+  <Url method="GET" resultDomain="kat.cr" template="https://kat.cr/usearch/" type="text/html">
+    <Param name="field" value="seeders"/>
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="sorder" value="desc"/>
+  </Url>
+  <Url method="GET" resultDomain="kat.cr" template="http://kat.cr/get_queries.php" type="application/x-suggestions+json">
+    <Param name="limit" value="10"/>
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="json" value="1"/>
+  </Url>
+  <SearchForm>https://kat.cr</SearchForm>
+</SearchPlugin>

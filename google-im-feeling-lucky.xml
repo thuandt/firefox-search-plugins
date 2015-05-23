@@ -1,0 +1,18 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Google (I'm Feeling Lucky)</ShortName>
+  <Description>Google I'm Feeling Lucky Search</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>https://encrypted.google.com/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">https://encrypted.google.com/favicon.ico</Image>
+  <Url method="GET" template="https://encrypted.google.com/complete/search" type="application/x-suggestions+json">
+    <Param name="client" value="firefox"/>
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+  <Url method="GET" template="https://encrypted.google.com/search" type="text/html">
+    <Param name="hl" value="en"/>
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="btnI" value="I'm Feeling Lucky"/>
+  </Url>
+  <SearchForm>https://encrypted.google.com</SearchForm>
+</SearchPlugin>

@@ -1,0 +1,10 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Google Translate</ShortName>
+  <Description>Translate to Vietnamese</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>http://translate.google.com/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">http://translate.google.com/favicon.ico</Image>
+  <Url method="GET" resultDomain="translate.google.com" template="https://translate.google.com/translate_t#auto/vi/{searchTerms}" type="text/html"/>
+  <SearchForm>https://translate.google.com</SearchForm>
+</SearchPlugin>

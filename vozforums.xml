@@ -1,0 +1,21 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>VOZ Forums</ShortName>
+  <Description>Google Search VOZ forums</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>http://vozforums.com/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">http://vozforums.com/favicon.ico</Image>
+  <Url method="GET" template="https://encrypted.google.com/complete/search" type="application/x-suggestions+json">
+    <Param name="client" value="firefox"/>
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="sitesearch" value="vozforums.com"/>
+  </Url>
+  <Url method="GET" resultDomain="encrypted.google.com" template="https://encrypted.google.com/search" type="text/html">
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="ie" value="utf-8"/>
+    <Param name="oe" value="utf-8"/>
+    <Param name="aq" value="t"/>
+    <Param name="sitesearch" value="vozforums.com"/>
+  </Url>
+  <SearchForm>http://vozforums.com</SearchForm>
+</SearchPlugin>

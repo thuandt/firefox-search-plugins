@@ -1,0 +1,12 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Ubuntu PPA</ShortName>
+  <Description>Search Launchpad PPA for packages</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>https://launchpad.net/@@/launchpad.png</IconUpdateUrl>
+  <Image height="16" type="image/png" width="16">https://launchpad.net/@@/launchpad.png</Image>
+  <Url method="GET" resultDomain="launchpad.net" template="https://launchpad.net/ubuntu/+ppas" type="text/html">
+    <Param name="name_filter" value="{searchTerms}"/>
+  </Url>
+  <SearchForm>https://launchpad.net/ubuntu/+ppas</SearchForm>
+</SearchPlugin>

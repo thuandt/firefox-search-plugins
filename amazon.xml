@@ -1,0 +1,19 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Amazon</ShortName>
+  <Description>Amazon US Search</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>http://www.amazon.com/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">http://www.amazon.com/favicon.ico</Image>
+  <Url method="GET" template="http://completion.amazon.com/search/complete" type="application/x-suggestions+json">
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="method" value="completion"/>
+    <Param name="search-alias" value="aps"/>
+    <Param name="client" value="firefox"/>
+    <Param name="mkt" value="1"/>
+  </Url>
+  <Url method="GET" template="http://www.amazon.com/s/" type="text/html">
+    <Param name="field-keywords" value="{searchTerms}"/>
+  </Url>
+  <SearchForm>http://www.amazon.com/</SearchForm>
+</SearchPlugin>

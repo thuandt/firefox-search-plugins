@@ -1,0 +1,16 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Wikipedia (en)</ShortName>
+  <Description>Wikipedia, the Free Encyclopedia</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>https://en.wikipedia.org/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">https://en.wikipedia.org/favicon.ico</Image>
+  <Url method="GET" template="https://en.wikipedia.org/w/api.php" type="application/x-suggestions+json">
+    <Param name="action" value="opensearch"/>
+    <Param name="search" value="{searchTerms}"/>
+  </Url>
+  <Url method="GET" rel="searchform" resultdomain="wikipedia.org" template="https://en.wikipedia.org/wiki/Special:Search" type="text/html">
+    <Param name="search" value="{searchTerms}"/>
+    <Param name="sourceid" value="Mozilla-search"/>
+  </Url>
+</SearchPlugin>

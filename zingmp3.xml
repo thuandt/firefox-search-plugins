@@ -1,0 +1,12 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Zing MP3</ShortName>
+  <Description>Search songs on Zing MP3</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image height="16" width="16">data:image/x-icon;base64,AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAD///8B////Af///wH///8B////AQAAADEPBR6BOhZ3gToWd4EPBR6BAAAAMf///wH///8B////Af///wH///8B////Af///wH///8BAAAAMTYUbs9eI8H/dCvu/3Qr7v90K+7/VUnw/xpkxv8POXHPAAAAMf///wH///8B////Af///wH///8BEwcoYVAepP90K+7/dCvu/3Qr7v90K+7/dCvu/0Bd8v8ge/T/IHv0/xhct/8FFSlh////Af///wH///8BAAAAMVAepP90K+7/dCvu/3Qr7v90K+7/dCvu/3Qr7v8ldvT/IHv0/yB79P8ge/T/GFy3/wAAADH///8B////ATYUbs90K+7/dCvu/3Qr7v90K+7/dCvu/3Qr7v9kOu//IHv0/yB79P9mpPf/ZqT3/yB79P8POXHP////AQAAADFeI8H/dCvu/3Qr7v90K+7/dCvu/5dg8v/Uvfr/ycf6/2ak9/8ge/T/SpT2/9Xm/f9KlPb/HGzW/wAAADEcFACBtXJZ/5VPpP97Mt//dCvu/5dg8v+/v7//ICAg/xAQEP+fn5//ZqT3/yB79P+dxfr/q877/yB79P8IHz2Bbk8AgdydAP/w1I//6cJg/8KBPP/Yvtv/ICAg/4CAgP+fn5//AAAA/8fe/P8ge/T/kL36/8fe/P8ge/T/ED56gW5PAIHcnQD/9OCv/+7OgP/cnQD/8tqf/yAgIP+Pj4//v7+//wAAAP/J4fL/JoTU/1ic9/90rfj/IHv0/xA+eoE3JwCB3J0A/+vIcP/257//3J0A/+W2QP+fn5//EBAQ/wAAAP+fn5//icmN/0KpSf8+o17/NZiJ/yuJv/8IHz2BAAAAMcGJAP/eoxD/9ue//+e8UP/cnQD/57xQ/9Dq0v/Q6tL/icmN/0KpSf9CqUn/QqlJ/0KpSf86lED/AAAAMf///wFmSADP3J0A/+CpIP/jrzD/3J0A/8mfCf9CqUn/QqlJ/0KpSf9CqUn/QqlJ/0KpSf9CqUn/KWgtz////wH///8BAAAAMaV2AP/cnQD/3J0A/9ydAP+iohv/QqlJ/0KpSf9CqUn/QqlJ/0KpSf9CqUn/Nok7/wAAADH///8B////Af///wElGgBhpXYA/9ydAP/cnQD/cqUy/0KpSf9CqUn/QqlJ/0KpSf9CqUn/Nok7/wscDGH///8B////Af///wH///8B////AQAAADFmSADPwYkA/0yoRP9CqUn/QqlJ/0KpSf86lED/KWgtzwAAADH///8B////Af///wH///8B////Af///wH///8B////AQAAADERKhKBIVUlgSFVJYEZPxuBAAAAMf///wH///8B////Af///wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//w==</Image>
+  <UpdateInterval>1</UpdateInterval>
+  <IconUpdateUrl>http://mp3.zing.vn/favicon.ico</IconUpdateUrl>
+  <Url method="GET" resultDomain="mp3.zing.vn" template="http://mp3.zing.vn/tim-kiem/bai-hat.html" type="text/html">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+  <SearchForm>http://mp3.zing.vn/</SearchForm>
+</SearchPlugin>

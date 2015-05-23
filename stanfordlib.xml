@@ -1,0 +1,15 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Stanford University Libraries</ShortName>
+  <Description>Search SUL</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image height="16" width="16">https://library.stanford.edu/sites/all/themes/sulair_framework/favicon.ico</Image>
+  <Url method="GET" template="https://encrypted.google.com/complete/search" type="application/x-suggestions+json">
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="client" value="firefox"/>
+  </Url>
+  <Url method="GET" template="http://searchworks.stanford.edu/" type="text/html">
+    <Param name="utf8" value="✓"/>
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+  <SearchForm>http://searchworks.stanford.edu/</SearchForm>
+</SearchPlugin>

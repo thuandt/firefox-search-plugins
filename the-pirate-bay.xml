@@ -1,0 +1,10 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>The Pirate Bay</ShortName>
+  <Description>Search The Pirate Bay</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <UpdateInterval>7</UpdateInterval>
+  <IconUpdateUrl>https://thepiratebay.vg/favicon.ico</IconUpdateUrl>
+  <Image height="16" type="image/x-icon" width="16">https://thepiratebay.vg/favicon.ico</Image>
+  <Url method="GET" resultDomain="thepiratebay.vg" template="https://thepiratebay.vg/search/{searchTerms}/0/7/0" type="text/html"/>
+  <SearchForm>https://thepiratebay.vg/</SearchForm>
+</SearchPlugin>
