@@ -1,5 +1,5 @@
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Wikipedia (en)</ShortName>
+  <ShortName>Wikipedia</ShortName>
   <Description>Wikipedia, the Free Encyclopedia</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <UpdateInterval>7</UpdateInterval>

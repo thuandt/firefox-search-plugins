@@ -1,5 +1,5 @@
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>eBay</ShortName>
+  <ShortName>eBay Shop</ShortName>
   <Description>Search eBay</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <UpdateInterval>7</UpdateInterval>

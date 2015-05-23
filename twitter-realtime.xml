@@ -1,5 +1,5 @@
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Twitter</ShortName>
+  <ShortName>Twitter Realtime</ShortName>
   <Description>Realtime Twitter Search</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <UpdateInterval>7</UpdateInterval>

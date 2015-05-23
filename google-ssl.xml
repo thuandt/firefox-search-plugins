@@ -1,5 +1,5 @@
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Google</ShortName>
+  <ShortName>Google SSL</ShortName>
   <Description>Google Search</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <UpdateInterval>7</UpdateInterval>
